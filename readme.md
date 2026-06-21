@@ -1,8 +1,5 @@
 # CoinMarketCap Bot
 
-> **Project note**: The canonical README is `README.md`. This file is kept for visibility in your editor.
-
-
 An automation service that:
 
 1) fetches trending coins from CoinMarketCap,
