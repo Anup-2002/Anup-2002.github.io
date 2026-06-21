@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+playwright
+openai
+python-dotenv
+apscheduler
+beautifulsoup4
+requests
+pydantic
+aiosqlite
+google-genai
+loguru

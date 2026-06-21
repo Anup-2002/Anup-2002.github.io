@@ -1,0 +1,14 @@
+venv/
+.env
+
+auth/state.json
+
+logs/
+
+screenshots/
+
+__pycache__/
+
+*.pyc
+
+database/app.db

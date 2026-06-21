@@ -1,0 +1,58 @@
+{
+  "status": "completed",
+  "total_coins": 10,
+  "success_count": 0,
+  "failed_count": 10,
+  "results": [
+    {
+      "url": "https://coinmarketcap.com/currencies/sp500-tokenized-stock-xstock/",
+      "message": "Still watching this one closely. Things have definitely picked up recently.",
+      "status": "unknown"
+    },
+    {
+      "url": "https://coinmarketcap.com/currencies/myneighboralice/",
+      "message": "Curious to see whether the recent momentum can continue.",
+      "status": "unknown"
+    },
+    {
+      "url": "https://coinmarketcap.com/currencies/aerodrome-finance/",
+      "message": "Interesting activity lately. Curious to see how things develop over the coming days.",
+      "status": "unknown"
+    },
+    {
+      "url": "https://coinmarketcap.com/currencies/bitcoin/",
+      "message": "This project has been getting quite a bit of attention recently.",
+      "status": "error"
+    },
+    {
+      "url": "https://coinmarketcap.com/currencies/bitlayer/",
+      "message": "Interesting to see the amount of activity surrounding this one lately.",
+      "status": "unknown"
+    },
+    {
+      "url": "https://coinmarketcap.com/currencies/resolv/",
+      "message": "This project has been getting quite a bit of attention recently.",
+      "status": "unknown"
+    },
+    {
+      "url": "https://coinmarketcap.com/currencies/fusionist/",
+      "message": "Been keeping an eye on this project recently. The market has definitely been active.",
+      "status": "unknown"
+    },
+    {
+      "url": "https://coinmarketcap.com/currencies/bitway-btw/",
+      "message": "Been keeping an eye on this project recently. The market has definitely been active.",
+      "status": "unknown"
+    },
+    {
+      "url": "https://coinmarketcap.com/currencies/clovis/",
+      "message": "Curious to see whether the recent momentum can continue.",
+      "status": "error"
+    },
+    {
+      "url": "https://coinmarketcap.com/currencies/nasdaq-tokenized-stock-xstock/",
+      "message": "Interesting to see the amount of activity surrounding this one lately.",
+      "status": "error"
+    }
+  ]
+}
