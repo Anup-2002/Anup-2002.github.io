@@ -6,6 +6,14 @@ from modules.fetch_trending import (
 
 router = APIRouter()
 
+'''
+This endpoint allows users to fetch trending coins.
+working:
+    1. Fetch trending coins from CoinMarketCap.
+    2. Return the list of trending coins as a JSON response.
+    3. Handle any exceptions that may occur during the process and return an error message if needed.
+'''
+
 class CoinRequest(BaseModel): 
     url: str
 @router.get("/fetch-trending")

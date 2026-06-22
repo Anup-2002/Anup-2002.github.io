@@ -20,7 +20,6 @@ from api.full_flow import (
     router as full_flow_router
 )
 
-
 app = FastAPI(
 
     title="CoinMarketCap Bot",

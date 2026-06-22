@@ -20,9 +20,6 @@ FALLBACK_MESSAGES = [
 ]
 
 
-# -------------------------
-# PROMPT (OPTIMIZED)
-# -------------------------
 def build_prompt(coin):
     return f"""
 Coin: {coin.get("name")}

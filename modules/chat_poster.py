@@ -5,6 +5,16 @@ from playwright.sync_api import (
     sync_playwright
 )
 
+'''
+This module provides functions to post chat messages to CoinMarketCap using Playwright.
+Functions:
+    - verify_session: Verifies if the user is logged in to CoinMarketCap.
+    - create_browser_session: Creates a new browser session with the specified storage state.
+    - close_browser_session: Closes the given browser session.
+    - post_chat_with_session: Posts a chat message to a specific coin's chat using the provided session.
+    - post_chat: Posts a chat message to a specific coin's chat by creating a new
+    browser session and then closing it after posting.
+'''
 
 def verify_session():
 
@@ -218,35 +228,40 @@ def post_chat_with_session(
 
         page.wait_for_timeout(
             random.randint(
-                4000,
-                7000
+                5000,
+                8000
             )
         )
 
         try:
 
-            remaining_text = (
-                textbox
+            new_button_text = (
+                post_button
                 .inner_text()
                 .strip()
             )
 
-        except:
+        except Exception:
 
-            remaining_text = ""
+            new_button_text = ""
 
-        if remaining_text == "":
+        if "Log in" in new_button_text:
 
             return {
-                "status": "success",
-                "message": "Post submitted"
+
+                "status": "error",
+
+                "message": "Session expired"
+
             }
 
         return {
-            "status": "unknown",
-            "message": "Unable to verify post"
-        }
 
+            "status": "success",
+
+            "message": "Post submitted"
+
+        }
     except Exception as e:
 
         return {
@@ -296,6 +311,4 @@ if __name__ == "__main__":
 
     )
 
-    print(
-        result
-    )
+    print(result)

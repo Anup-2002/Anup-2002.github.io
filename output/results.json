@@ -1,57 +1,57 @@
 {
   "status": "completed",
   "total_coins": 10,
-  "success_count": 0,
-  "failed_count": 10,
+  "success_count": 8,
+  "failed_count": 2,
   "results": [
     {
       "url": "https://coinmarketcap.com/currencies/sp500-tokenized-stock-xstock/",
-      "message": "Still watching this one closely. Things have definitely picked up recently.",
-      "status": "unknown"
+      "message": "SPYX looking pretty stable with a small change today. It's always interesting to watch how these tokenized ETFs track.",
+      "status": "success"
     },
     {
       "url": "https://coinmarketcap.com/currencies/myneighboralice/",
-      "message": "Curious to see whether the recent momentum can continue.",
-      "status": "unknown"
+      "message": "Looks like ALICE is getting some attention today, currently sitting around $0.1580 after a significant 24h pump. Always interesting to see tokens making big moves.",
+      "status": "success"
     },
     {
       "url": "https://coinmarketcap.com/currencies/aerodrome-finance/",
-      "message": "Interesting activity lately. Curious to see how things develop over the coming days.",
-      "status": "unknown"
+      "message": "AERO is looking strong today, seeing some nice upward movement.",
+      "status": "success"
     },
     {
       "url": "https://coinmarketcap.com/currencies/bitcoin/",
-      "message": "This project has been getting quite a bit of attention recently.",
-      "status": "error"
+      "message": "BTC is holding above $64k today. The market cap is still looking strong at $1.28T.",
+      "status": "success"
     },
     {
       "url": "https://coinmarketcap.com/currencies/bitlayer/",
-      "message": "Interesting to see the amount of activity surrounding this one lately.",
-      "status": "unknown"
-    },
-    {
-      "url": "https://coinmarketcap.com/currencies/resolv/",
-      "message": "This project has been getting quite a bit of attention recently.",
-      "status": "unknown"
-    },
-    {
-      "url": "https://coinmarketcap.com/currencies/fusionist/",
-      "message": "Been keeping an eye on this project recently. The market has definitely been active.",
-      "status": "unknown"
-    },
-    {
-      "url": "https://coinmarketcap.com/currencies/bitway-btw/",
-      "message": "Been keeping an eye on this project recently. The market has definitely been active.",
-      "status": "unknown"
-    },
-    {
-      "url": "https://coinmarketcap.com/currencies/clovis/",
-      "message": "Curious to see whether the recent momentum can continue.",
+      "message": "Looks like BTR is catching some serious momentum today with that 41% climb. Always interesting to see these kind of moves play out.",
       "status": "error"
     },
     {
+      "url": "https://coinmarketcap.com/currencies/resolv/",
+      "message": "RESOLV is definitely catching some eyes today, up over 20% and seeing a lot of action. Looks like the price is hovering around $0.01759.",
+      "status": "success"
+    },
+    {
+      "url": "https://coinmarketcap.com/currencies/fusionist/",
+      "message": "ACE is certainly making some noise with that 24% jump today. Volume's looking pretty substantial as well.",
+      "status": "success"
+    },
+    {
+      "url": "https://coinmarketcap.com/currencies/bitway-btw/",
+      "message": "BTW is having a decent day, currently up over 14% and trading around $0.099 with volume at $140M. Interesting to see it move like this.",
+      "status": "success"
+    },
+    {
+      "url": "https://coinmarketcap.com/currencies/clovis/",
+      "message": "Yei Finance (CLO) is definitely catching some eyes today, up almost 19% with over $37 million in volume. Interesting to see it moving like that.",
+      "status": "success"
+    },
+    {
       "url": "https://coinmarketcap.com/currencies/nasdaq-tokenized-stock-xstock/",
-      "message": "Interesting to see the amount of activity surrounding this one lately.",
+      "message": "QQQX is showing a little green today. Looks like some decent volume pushing it.",
       "status": "error"
     }
   ]

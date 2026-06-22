@@ -1,5 +1,14 @@
 from playwright.sync_api import sync_playwright
 
+# ----------------- Fetch Trending Coins -----------------
+'''
+This module fetches trending coins from CoinMarketCap using Playwright.
+Functions:
+    - fetch_trending_coins: Fetches the top trending coins and their details.
+    - The function returns a list of dictionaries containing information about each trending coin.
+    - Each dictionary includes the coin's name, symbol, price, changes, market cap, volume, liquidity, chain, age, transactions, and URL.        
+        
+'''
 
 def fetch_trending_coins():
 
@@ -61,8 +70,6 @@ def fetch_trending_coins():
                         "https://coinmarketcap.com"
                         + href
                     )
-
-                    # -------- Name + Symbol --------
 
                     name_block = columns.nth(
                         2
@@ -256,6 +263,4 @@ if __name__ == "__main__":
 
     for coin in coins:
 
-        print(
-            coin
-        )
+        print(coin)

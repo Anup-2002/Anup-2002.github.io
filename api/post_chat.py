@@ -4,8 +4,12 @@ from schemas.post import PostRequest
 from modules.chat_poster import post_chat
 
 router = APIRouter()
+# TODO: Add authentication and rate limiting to this endpoint   
 
+'''
+This endpoint allows users to post a chat message to a specific coin's chat.
 
+'''
 @router.post("/post-chat")
 def post_chat_api(
     request: PostRequest

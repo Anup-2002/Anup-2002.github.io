@@ -1,6 +1,14 @@
 from playwright.sync_api import sync_playwright
 
-
+# ----------------- Session Management -----------------
+'''
+This module provides functions to manage browser sessions using Playwright.
+Functions:
+    - check_login: Checks if the user is logged in to CoinMarketCap by verifying the
+    presence of the post button on a specific coin's page.
+    - The function returns a dictionary indicating the login status and any relevant messages.
+    - The function handles exceptions and returns an error message if any issues occur during the process.
+'''
 def check_login():
 
     with sync_playwright() as p:

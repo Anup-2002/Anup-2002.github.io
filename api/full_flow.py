@@ -10,14 +10,14 @@ from modules.chat_poster import (
 
 router = APIRouter()
 
+'''
+This endpoint allows users to run the full flow: fetch trending coins, generate messages, and post chats.
+'''
 
 @router.post("/full-flow")
 def full_flow():
 
     try:
-
-        # If we already scraped recently (e.g., during debugging), reuse it.
-        # This avoids re-running the Playwright scraping step every time /full-flow is called.
         try:
             import json, os
             # default path if not set yet
@@ -31,10 +31,6 @@ def full_flow():
                 coins = fetch_trending_coins()
         except Exception:
             coins = fetch_trending_coins()
-
-        # Persist scraped trending coins for this run so we do not scrape again
-        # if the endpoint is re-invoked while debugging.
-        # (Also makes it possible to inspect inputs used for message generation.)
         try:
             import os, json
             os.makedirs("output", exist_ok=True)
@@ -56,15 +52,9 @@ def full_flow():
 
         for coin in coins:
 
-
             try:
 
-                # Avoid repeating fallback messages: if generator returns a known fallback,
-                # retry once using a slightly different prompt.
                 message = generate_message(coin)
-
-                # Simple repeat protection: if the LLM failed and we got a too-short/common fallback,
-                # retry once.
                 if not message or len(message) < 20:
                     message = generate_message(coin)
 
