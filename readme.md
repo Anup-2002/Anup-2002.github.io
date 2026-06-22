@@ -1,6 +1,6 @@
 # CoinMarketCap Bot
-
-An automation service that:
+DEMO Video :https://youtu.be/vfLEb5vVKTw"
+- An automation service that:
 
 1) fetches trending coins from CoinMarketCap,
 2) generates a community-style message with an LLM,
