@@ -10,6 +10,9 @@ from api.generate_message import router as generate_message_router
 from api.post_chat import router as post_chat_router
 from api.full_flow import router as full_flow_router
 from api.status import router as status_router
+import os
+
+os.environ["PLAYWRIGHT_BROWSERS_PATH"] = "/opt/render/.cache/ms-playwright"
 app = FastAPI(
 
     title="CoinMarketCap Bot",

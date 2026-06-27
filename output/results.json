@@ -348,5 +348,355 @@
         "url": "https://coinmarketcap.com/currencies/bitget-token-new/",
         "status": "captcha",
         "message": "Captcha detected"
+    },
+    {
+        "name": "Bitget Token",
+        "symbol": "BGB",
+        "url": "https://coinmarketcap.com/currencies/bitget-token-new/",
+        "status": "captcha",
+        "message": "Captcha detected"
+    },
+    {
+        "name": "Ethereum Classic",
+        "symbol": "ETC",
+        "url": "https://coinmarketcap.com/currencies/ethereum-classic/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "MemeCore",
+        "symbol": "M",
+        "url": "https://coinmarketcap.com/currencies/memecore/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "United Stables",
+        "symbol": "U",
+        "url": "https://coinmarketcap.com/currencies/united-stables/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "Pepe",
+        "symbol": "PEPE",
+        "url": "https://coinmarketcap.com/currencies/pepe/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "KuCoin Token",
+        "symbol": "KCS",
+        "url": "https://coinmarketcap.com/currencies/kucoin-token/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "Stable",
+        "symbol": "STABLE",
+        "url": "https://coinmarketcap.com/currencies/stable/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "Morpho",
+        "symbol": "MORPHO",
+        "url": "https://coinmarketcap.com/currencies/morpho/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "Cosmos",
+        "symbol": "ATOM",
+        "url": "https://coinmarketcap.com/currencies/cosmos/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "Quant",
+        "symbol": "QNT",
+        "url": "https://coinmarketcap.com/currencies/quant/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "Render",
+        "symbol": "RENDER",
+        "url": "https://coinmarketcap.com/currencies/render/",
+        "status": "captcha",
+        "message": "Captcha detected"
+    },
+    {
+        "name": "Kaspa",
+        "symbol": "KAS",
+        "url": "https://coinmarketcap.com/currencies/kaspa/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "Polygon (prev. MATIC)",
+        "symbol": "POL",
+        "url": "https://coinmarketcap.com/currencies/polygon-ecosystem-token/",
+        "status": "captcha",
+        "message": "Captcha detected"
+    },
+    {
+        "name": "Jupiter",
+        "symbol": "JUP",
+        "url": "https://coinmarketcap.com/currencies/jupiter-ag/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "Algorand",
+        "symbol": "ALGO",
+        "url": "https://coinmarketcap.com/currencies/algorand/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "Ethena",
+        "symbol": "ENA",
+        "url": "https://coinmarketcap.com/currencies/ethena/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "币安人生",
+        "symbol": "币安人生",
+        "url": "https://coinmarketcap.com/currencies/bianrensheng/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "JUST",
+        "symbol": "JST",
+        "url": "https://coinmarketcap.com/currencies/just/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "GateToken",
+        "symbol": "GT",
+        "url": "https://coinmarketcap.com/currencies/gatetoken/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "Audiera",
+        "symbol": "BEAT",
+        "url": "https://coinmarketcap.com/currencies/audiera/",
+        "status": "captcha",
+        "message": "Captcha detected"
+    },
+    {
+        "name": "Venice Token",
+        "symbol": "VVV",
+        "url": "https://coinmarketcap.com/currencies/venice-token/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "Filecoin",
+        "symbol": "FIL",
+        "url": "https://coinmarketcap.com/currencies/filecoin/",
+        "status": "captcha",
+        "message": "Captcha detected"
+    },
+    {
+        "name": "Flare",
+        "symbol": "FLR",
+        "url": "https://coinmarketcap.com/currencies/flare/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "XDC Network",
+        "symbol": "XDC",
+        "url": "https://coinmarketcap.com/currencies/xdc-network/",
+        "status": "captcha",
+        "message": "Captcha detected"
+    },
+    {
+        "name": "Pump.fun",
+        "symbol": "PUMP",
+        "url": "https://coinmarketcap.com/currencies/pump-fun/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "Midnight",
+        "symbol": "NIGHT",
+        "url": "https://coinmarketcap.com/currencies/midnight-network/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "Aptos",
+        "symbol": "APT",
+        "url": "https://coinmarketcap.com/currencies/aptos/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "TrueUSD",
+        "symbol": "TUSD",
+        "url": "https://coinmarketcap.com/currencies/trueusd/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "Nexo",
+        "symbol": "NEXO",
+        "url": "https://coinmarketcap.com/currencies/nexo/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "Injective",
+        "symbol": "INJ",
+        "url": "https://coinmarketcap.com/currencies/injective/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "url": "https://coinmarketcap.com/currencies/arbitrum/",
+        "status": "captcha",
+        "message": "Captcha detected"
+    },
+    {
+        "name": "Aerodrome Finance",
+        "symbol": "AERO",
+        "url": "https://coinmarketcap.com/currencies/aerodrome-finance/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "Lighter",
+        "symbol": "LIT",
+        "url": "https://coinmarketcap.com/currencies/lighter/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "Dash",
+        "symbol": "DASH",
+        "url": "https://coinmarketcap.com/currencies/dash/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "PancakeSwap",
+        "symbol": "CAKE",
+        "url": "https://coinmarketcap.com/currencies/pancakeswap/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "EURC",
+        "symbol": "EURC",
+        "url": "https://coinmarketcap.com/currencies/euro-coin/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "Jito",
+        "symbol": "JTO",
+        "url": "https://coinmarketcap.com/currencies/jito/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "OFFICIAL TRUMP",
+        "symbol": "TRUMP",
+        "url": "https://coinmarketcap.com/currencies/official-trump/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "Artificial Superintelligence Alliance",
+        "symbol": "FET",
+        "url": "https://coinmarketcap.com/currencies/artificial-superintelligence-alliance/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "url": "https://coinmarketcap.com/currencies/pudgy-penguins/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "VeChain",
+        "symbol": "VET",
+        "url": "https://coinmarketcap.com/currencies/vechain/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "Sei",
+        "symbol": "SEI",
+        "url": "https://coinmarketcap.com/currencies/sei/",
+        "status": "captcha",
+        "message": "Captcha detected"
+    },
+    {
+        "name": "Bonk",
+        "symbol": "BONK",
+        "url": "https://coinmarketcap.com/currencies/bonk1/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "Celestia",
+        "symbol": "TIA",
+        "url": "https://coinmarketcap.com/currencies/celestia/",
+        "status": "captcha",
+        "message": "Captcha detected"
+    },
+    {
+        "name": "Virtuals Protocol",
+        "symbol": "VIRTUAL",
+        "url": "https://coinmarketcap.com/currencies/virtual-protocol/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "SKYAI",
+        "symbol": "SKYAI",
+        "url": "https://coinmarketcap.com/currencies/skyai/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "Terra Classic",
+        "symbol": "LUNC",
+        "url": "https://coinmarketcap.com/currencies/terra-luna/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "First Digital USD",
+        "symbol": "FDUSD",
+        "url": "https://coinmarketcap.com/currencies/first-digital-usd/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "ether.fi",
+        "symbol": "ETHFI",
+        "url": "https://coinmarketcap.com/currencies/ether-fi-ethfi/",
+        "status": "success",
+        "message": "Posted successfully"
+    },
+    {
+        "name": "Sun [New]",
+        "symbol": "SUN",
+        "url": "https://coinmarketcap.com/currencies/sun-token/",
+        "status": "success",
+        "message": "Posted successfully"
     }
 ]

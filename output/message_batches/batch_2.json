@@ -1,0 +1,302 @@
+[
+    {
+        "name": "Ethereum Classic",
+        "symbol": "ETC",
+        "url": "https://coinmarketcap.com/currencies/ethereum-classic/",
+        "message": "Ethereum Classic is showing some positive movement today, although the weekly trend is still concerning."
+    },
+    {
+        "name": "MemeCore",
+        "symbol": "M",
+        "url": "https://coinmarketcap.com/currencies/memecore/",
+        "message": "MemeCore is facing a significant decline, with a drastic drop over the past week—definitely a coin to monitor closely."
+    },
+    {
+        "name": "United Stables",
+        "symbol": "U",
+        "url": "https://coinmarketcap.com/currencies/united-stables/",
+        "message": "United Stables remains relatively stable despite minor fluctuations, reflecting a steady demand among users."
+    },
+    {
+        "name": "Pepe",
+        "symbol": "PEPE",
+        "url": "https://coinmarketcap.com/currencies/pepe/",
+        "message": "Pepe has experienced a nice bump today, but the overall weekly performance suggests volatility ahead."
+    },
+    {
+        "name": "KuCoin Token",
+        "symbol": "KCS",
+        "url": "https://coinmarketcap.com/currencies/kucoin-token/",
+        "message": "KuCoin Token's recent downturn is notable, reflecting market sentiment that could shift soon."
+    },
+    {
+        "name": "Stable",
+        "symbol": "STABLE",
+        "url": "https://coinmarketcap.com/currencies/stable/",
+        "message": "Stable has shown a strong recovery in the last week, with volume indicating renewed interest."
+    },
+    {
+        "name": "Morpho",
+        "symbol": "MORPHO",
+        "url": "https://coinmarketcap.com/currencies/morpho/",
+        "message": "Morpho's current trend is downwards, but the market activity suggests it might bounce back."
+    },
+    {
+        "name": "Cosmos",
+        "symbol": "ATOM",
+        "url": "https://coinmarketcap.com/currencies/cosmos/",
+        "message": "Cosmos is barely moving today, though the long-term chart shows it may be testing new support levels."
+    },
+    {
+        "name": "Quant",
+        "symbol": "QNT",
+        "url": "https://coinmarketcap.com/currencies/quant/",
+        "message": "Quant's small uptick today is noteworthy, but the week’s trend remains bearish."
+    },
+    {
+        "name": "Render",
+        "symbol": "RENDER",
+        "url": "https://coinmarketcap.com/currencies/render/",
+        "message": "Render is up slightly today, yet the overall momentum over the week could be a concern for traders."
+    },
+    {
+        "name": "Kaspa",
+        "symbol": "KAS",
+        "url": "https://coinmarketcap.com/currencies/kaspa/",
+        "message": "Kaspa has shown a strong gain today, but it’s essential to keep an eye on how it performs in the coming days."
+    },
+    {
+        "name": "Polygon (prev. MATIC)",
+        "symbol": "POL",
+        "url": "https://coinmarketcap.com/currencies/polygon-ecosystem-token/",
+        "message": "Polygon's recent price action indicates some recovery, but it's still facing challenges from the past week."
+    },
+    {
+        "name": "Jupiter",
+        "symbol": "JUP",
+        "url": "https://coinmarketcap.com/currencies/jupiter-ag/",
+        "message": "Jupiter has surged significantly today, showcasing potential for a positive trend reversal."
+    },
+    {
+        "name": "Algorand",
+        "symbol": "ALGO",
+        "url": "https://coinmarketcap.com/currencies/algorand/",
+        "message": "Algorand is struggling with ongoing declines, and today's performance does not help its case."
+    },
+    {
+        "name": "Ethena",
+        "symbol": "ENA",
+        "url": "https://coinmarketcap.com/currencies/ethena/",
+        "message": "Ethena's price action shows continued weakness, despite a brief spike earlier today."
+    },
+    {
+        "name": "币安人生",
+        "symbol": "币安人生",
+        "url": "https://coinmarketcap.com/currencies/bianrensheng/",
+        "message": "币安人生 has shown some positive momentum today, but the overall trend remains cautious."
+    },
+    {
+        "name": "JUST",
+        "symbol": "JST",
+        "url": "https://coinmarketcap.com/currencies/just/",
+        "message": "JUST has dipped slightly today, but the weekly trend shows some signs of recovery."
+    },
+    {
+        "name": "GateToken",
+        "symbol": "GT",
+        "url": "https://coinmarketcap.com/currencies/gatetoken/",
+        "message": "GateToken's market activity today suggests a lack of momentum compared to earlier performances."
+    },
+    {
+        "name": "Audiera",
+        "symbol": "BEAT",
+        "url": "https://coinmarketcap.com/currencies/audiera/",
+        "message": "Audiera's impressive growth today is part of a remarkable upward trend in recent weeks."
+    },
+    {
+        "name": "Venice Token",
+        "symbol": "VVV",
+        "url": "https://coinmarketcap.com/currencies/venice-token/",
+        "message": "Venice Token is holding steady today, yet the past week’s performance signals caution."
+    },
+    {
+        "name": "Filecoin",
+        "symbol": "FIL",
+        "url": "https://coinmarketcap.com/currencies/filecoin/",
+        "message": "Filecoin's price increase today may provide a glimmer of hope amidst recent downward trends."
+    },
+    {
+        "name": "Flare",
+        "symbol": "FLR",
+        "url": "https://coinmarketcap.com/currencies/flare/",
+        "message": "Flare is experiencing a rough patch, with price drops indicating caution for investors."
+    },
+    {
+        "name": "XDC Network",
+        "symbol": "XDC",
+        "url": "https://coinmarketcap.com/currencies/xdc-network/",
+        "message": "XDC Network has seen continued struggle, even as it attempts to stabilize in today's trading."
+    },
+    {
+        "name": "Pump.fun",
+        "symbol": "PUMP",
+        "url": "https://coinmarketcap.com/currencies/pump-fun/",
+        "message": "Pump.fun has gained today, but the overall trajectory suggests a need for careful observation."
+    },
+    {
+        "name": "Midnight",
+        "symbol": "NIGHT",
+        "url": "https://coinmarketcap.com/currencies/midnight-network/",
+        "message": "Midnight's current performance has been lackluster, although today's small uptick offers a glimmer of hope."
+    },
+    {
+        "name": "Aptos",
+        "symbol": "APT",
+        "url": "https://coinmarketcap.com/currencies/aptos/",
+        "message": "Aptos is making small gains today, but the week’s performance remains concerning."
+    },
+    {
+        "name": "TrueUSD",
+        "symbol": "TUSD",
+        "url": "https://coinmarketcap.com/currencies/trueusd/",
+        "message": "TrueUSD's minor dips today reflect a generally stable but cautious market position."
+    },
+    {
+        "name": "Nexo",
+        "symbol": "NEXO",
+        "url": "https://coinmarketcap.com/currencies/nexo/",
+        "message": "Nexo's slight gain today might not be enough to offset the overall trend of recent weeks."
+    },
+    {
+        "name": "Injective",
+        "symbol": "INJ",
+        "url": "https://coinmarketcap.com/currencies/injective/",
+        "message": "Injective is on a tear today, significantly bouncing back from its recent slumps."
+    },
+    {
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "url": "https://coinmarketcap.com/currencies/arbitrum/",
+        "message": "Arbitrum has seen solid movement today, but the overall trend indicates some challenges ahead."
+    },
+    {
+        "name": "Aerodrome Finance",
+        "symbol": "AERO",
+        "url": "https://coinmarketcap.com/currencies/aerodrome-finance/",
+        "message": "Aerodrome Finance's performance is stabilizing, yet the week’s changes leave some uncertainty."
+    },
+    {
+        "name": "Lighter",
+        "symbol": "LIT",
+        "url": "https://coinmarketcap.com/currencies/lighter/",
+        "message": "Lighter is making strides today, building on a positive weekly trend that excites investors."
+    },
+    {
+        "name": "Dash",
+        "symbol": "DASH",
+        "url": "https://coinmarketcap.com/currencies/dash/",
+        "message": "Dash's slight rise today shows resilience, although it's battling a downward trend over the week."
+    },
+    {
+        "name": "PancakeSwap",
+        "symbol": "CAKE",
+        "url": "https://coinmarketcap.com/currencies/pancakeswap/",
+        "message": "PancakeSwap has gained today, but the overall market sentiment remains mixed."
+    },
+    {
+        "name": "EURC",
+        "symbol": "EURC",
+        "url": "https://coinmarketcap.com/currencies/euro-coin/",
+        "message": "EURC is maintaining stability today, but its weekly performance suggests it's facing headwinds."
+    },
+    {
+        "name": "Jito",
+        "symbol": "JTO",
+        "url": "https://coinmarketcap.com/currencies/jito/",
+        "message": "Jito's significant rise today signals a potential turnaround in market sentiment."
+    },
+    {
+        "name": "OFFICIAL TRUMP",
+        "symbol": "TRUMP",
+        "url": "https://coinmarketcap.com/currencies/official-trump/",
+        "message": "OFFICIAL TRUMP's growth today is notable, but the weekly decline raises some flags."
+    },
+    {
+        "name": "Artificial Superintelligence Alliance",
+        "symbol": "FET",
+        "url": "https://coinmarketcap.com/currencies/artificial-superintelligence-alliance/",
+        "message": "Artificial Superintelligence Alliance has shown resilience today, but the longer-term trend is still downward."
+    },
+    {
+        "name": "Pudgy Penguins",
+        "symbol": "PENGU",
+        "url": "https://coinmarketcap.com/currencies/pudgy-penguins/",
+        "message": "Pudgy Penguins are showing promise with today’s uptick, but past performance raises some concerns."
+    },
+    {
+        "name": "VeChain",
+        "symbol": "VET",
+        "url": "https://coinmarketcap.com/currencies/vechain/",
+        "message": "VeChain's modest rise today is a small relief amid a challenging overall weekly trend."
+    },
+    {
+        "name": "Sei",
+        "symbol": "SEI",
+        "url": "https://coinmarketcap.com/currencies/sei/",
+        "message": "Sei is struggling today, continuing a trend of volatility that traders should be cautious of."
+    },
+    {
+        "name": "Bonk",
+        "symbol": "BONK",
+        "url": "https://coinmarketcap.com/currencies/bonk1/",
+        "message": "Bonk has gained slightly today, but its recent performance suggests ongoing volatility."
+    },
+    {
+        "name": "Celestia",
+        "symbol": "TIA",
+        "url": "https://coinmarketcap.com/currencies/celestia/",
+        "message": "Celestia has made impressive gains today, continuing a positive trend that’s worthy of attention."
+    },
+    {
+        "name": "Virtuals Protocol",
+        "symbol": "VIRTUAL",
+        "url": "https://coinmarketcap.com/currencies/virtual-protocol/",
+        "message": "Virtuals Protocol's rise today shows a bit of promise, yet the ongoing weekly decline cannot be ignored."
+    },
+    {
+        "name": "SKYAI",
+        "symbol": "SKYAI",
+        "url": "https://coinmarketcap.com/currencies/skyai/",
+        "message": "SKYAI's sharp increase today is exciting, especially after a week of mixed performance."
+    },
+    {
+        "name": "Terra Classic",
+        "symbol": "LUNC",
+        "url": "https://coinmarketcap.com/currencies/terra-luna/",
+        "message": "Terra Classic has shown a nice bounce back today, but the overall trend indicates caution."
+    },
+    {
+        "name": "First Digital USD",
+        "symbol": "FDUSD",
+        "url": "https://coinmarketcap.com/currencies/first-digital-usd/",
+        "message": "First Digital USD remains stable, but the slight decline today reflects stagnant market interest."
+    },
+    {
+        "name": "ether.fi",
+        "symbol": "ETHFI",
+        "url": "https://coinmarketcap.com/currencies/ether-fi-ethfi/",
+        "message": "ether.fi has shown exciting movement today, building on a positive trend that could attract new investors."
+    },
+    {
+        "name": "Sun [New]",
+        "symbol": "SUN",
+        "url": "https://coinmarketcap.com/currencies/sun-token/",
+        "message": "Sun’s recent struggles continue today, but a turnaround may be on the horizon with consistent monitoring."
+    },
+    {
+        "name": "Stacks",
+        "symbol": "STX",
+        "url": "https://coinmarketcap.com/currencies/stacks/",
+        "message": "Stacks has gained some traction today, though the weekly performance suggests it's still in a tough spot."
+    }
+]

@@ -1,0 +1,302 @@
+[
+    {
+        "name": "Rain",
+        "symbol": "RAIN",
+        "url": "https://coinmarketcap.com/currencies/rain/",
+        "message": "RAIN has experienced some recent pressure in the market. It will be interesting to see how activity develops from here."
+    },
+    {
+        "name": "LAB",
+        "symbol": "LAB",
+        "url": "https://coinmarketcap.com/currencies/lab/",
+        "message": "LAB has been moving steadily over the last day. It continues to attract attention from market participants."
+    },
+    {
+        "name": "Ondo US Dollar Yield",
+        "symbol": "USDY",
+        "url": "https://coinmarketcap.com/currencies/ondo-us-dollar-yield/",
+        "message": "USDY has been moving steadily over the last day. It continues to attract attention from market participants."
+    },
+    {
+        "name": "HTX",
+        "symbol": "HTX",
+        "url": "https://coinmarketcap.com/currencies/htx/",
+        "message": "HTX has experienced some recent pressure in the market. It will be interesting to see how activity develops from here."
+    },
+    {
+        "name": "Falcon USD",
+        "symbol": "USDf",
+        "url": "https://coinmarketcap.com/currencies/falcon-finance/",
+        "message": "USDf has been moving steadily over the last day. It continues to attract attention from market participants."
+    },
+    {
+        "name": "USDGO",
+        "symbol": "USDGO",
+        "url": "https://coinmarketcap.com/currencies/usdgo/",
+        "message": "USDGO has experienced some recent pressure in the market. It will be interesting to see how activity develops from here."
+    },
+    {
+        "name": "c8ntinuum",
+        "symbol": "CTM",
+        "url": "https://coinmarketcap.com/currencies/c8ntinuum/",
+        "message": "CTM has been moving steadily over the last day. It continues to attract attention from market participants."
+    },
+    {
+        "name": "Jupiter Perps LP",
+        "symbol": "JLP",
+        "url": "https://coinmarketcap.com/currencies/jupiter-perps-lp/",
+        "message": "JLP has been moving steadily over the last day. It continues to attract attention from market participants."
+    },
+    {
+        "name": "Beldex",
+        "symbol": "BDX",
+        "url": "https://coinmarketcap.com/currencies/beldex/",
+        "message": "BDX has experienced some recent pressure in the market. It will be interesting to see how activity develops from here."
+    },
+    {
+        "name": "GHO",
+        "symbol": "GHO",
+        "url": "https://coinmarketcap.com/currencies/gho/",
+        "message": "GHO has been moving steadily over the last day. It continues to attract attention from market participants."
+    },
+    {
+        "name": "TBLL tokenized ETF (xStock)",
+        "symbol": "TBLLX",
+        "url": "https://coinmarketcap.com/currencies/tbll-tokenized-etf-xstock/",
+        "message": "TBLLX has been moving steadily over the last day. It continues to attract attention from market participants."
+    },
+    {
+        "name": "Usual USD",
+        "symbol": "USD0",
+        "url": "https://coinmarketcap.com/currencies/usual-usd/",
+        "message": "USD0 has been moving steadily over the last day. It continues to attract attention from market participants."
+    },
+    {
+        "name": "Solstice USX",
+        "symbol": "USX",
+        "url": "https://coinmarketcap.com/currencies/solstice-usx/",
+        "message": "USX has experienced some recent pressure in the market. It will be interesting to see how activity develops from here."
+    },
+    {
+        "name": "USDai",
+        "symbol": "USDAI",
+        "url": "https://coinmarketcap.com/currencies/usdai/",
+        "message": "USDAI has been moving steadily over the last day. It continues to attract attention from market participants."
+    },
+    {
+        "name": "Ducky",
+        "symbol": "DUCKY",
+        "url": "https://coinmarketcap.com/currencies/ducky/",
+        "message": "DUCKY has been moving steadily over the last day. It continues to attract attention from market participants."
+    },
+    {
+        "name": "Legacy Frax Dollar",
+        "symbol": "FRAX",
+        "url": "https://coinmarketcap.com/currencies/frax/",
+        "message": "FRAX has been moving steadily over the last day. It continues to attract attention from market participants."
+    },
+    {
+        "name": "48 Club Token",
+        "symbol": "KOGE",
+        "url": "https://coinmarketcap.com/currencies/bnb48-club-token/",
+        "message": "KOGE has been moving steadily over the last day. It continues to attract attention from market participants."
+    },
+    {
+        "name": "Bitway",
+        "symbol": "BTW",
+        "url": "https://coinmarketcap.com/currencies/bitway-btw/",
+        "message": "BTW has experienced some recent pressure in the market. It will be interesting to see how activity develops from here."
+    },
+    {
+        "name": "Ape and Pepe",
+        "symbol": "APEPE",
+        "url": "https://coinmarketcap.com/currencies/ape-and-pepe/",
+        "message": "APEPE has experienced some recent pressure in the market. It will be interesting to see how activity develops from here."
+    },
+    {
+        "name": "Unibase",
+        "symbol": "UB",
+        "url": "https://coinmarketcap.com/currencies/unibase/",
+        "message": "UB has been showing strong momentum recently. Market activity remains elevated and traders appear highly engaged."
+    },
+    {
+        "name": "Intel tokenized stock (xStock)",
+        "symbol": "INTCX",
+        "url": "https://coinmarketcap.com/currencies/intel-tokenized-stock-xstock/",
+        "message": "INTCX has experienced some recent pressure in the market. It will be interesting to see how activity develops from here."
+    },
+    {
+        "name": "USAT",
+        "symbol": "USAT",
+        "url": "https://coinmarketcap.com/currencies/tether-usat/",
+        "message": "USAT has experienced some recent pressure in the market. It will be interesting to see how activity develops from here."
+    },
+    {
+        "name": "Strategy PP Variable tokenized stock (xStock)",
+        "symbol": "STRCX",
+        "url": "https://coinmarketcap.com/currencies/strategy-pp-variable-tokenized-stock-xstock/",
+        "message": "STRCX has experienced some recent pressure in the market. It will be interesting to see how activity develops from here."
+    },
+    {
+        "name": "AUSD",
+        "symbol": "AUSD",
+        "url": "https://coinmarketcap.com/currencies/agora-finance/",
+        "message": "AUSD has been moving steadily over the last day. It continues to attract attention from market participants."
+    },
+    {
+        "name": "WeFi",
+        "symbol": "WFI",
+        "url": "https://coinmarketcap.com/currencies/wfi/",
+        "message": "WFI has experienced some recent pressure in the market. It will be interesting to see how activity develops from here."
+    },
+    {
+        "name": "SwissBorg",
+        "symbol": "BORG",
+        "url": "https://coinmarketcap.com/currencies/swissborg/",
+        "message": "BORG has been moving steadily over the last day. It continues to attract attention from market participants."
+    },
+    {
+        "name": "SP500 tokenized ETF (xStock)",
+        "symbol": "SPYX",
+        "url": "https://coinmarketcap.com/currencies/sp500-tokenized-stock-xstock/",
+        "message": "SPYX has been moving steadily over the last day. It continues to attract attention from market participants."
+    },
+    {
+        "name": "Zano",
+        "symbol": "ZANO",
+        "url": "https://coinmarketcap.com/currencies/zano/",
+        "message": "ZANO has experienced some recent pressure in the market. It will be interesting to see how activity develops from here."
+    },
+    {
+        "name": "Nasdaq tokenized ETF (xStock)",
+        "symbol": "QQQX",
+        "url": "https://coinmarketcap.com/currencies/nasdaq-tokenized-stock-xstock/",
+        "message": "QQQX has experienced some recent pressure in the market. It will be interesting to see how activity develops from here."
+    },
+    {
+        "name": "Tesla tokenized stock (xStock)",
+        "symbol": "TSLAX",
+        "url": "https://coinmarketcap.com/currencies/tesla-tokenized-stock-xstock/",
+        "message": "TSLAX has been moving steadily over the last day. It continues to attract attention from market participants."
+    },
+    {
+        "name": "Marvell tokenized stock (xStock)",
+        "symbol": "MRVLX",
+        "url": "https://coinmarketcap.com/currencies/marvell-tokenized-stock-xstock/",
+        "message": "MRVLX has experienced some recent pressure in the market. It will be interesting to see how activity develops from here."
+    },
+    {
+        "name": "GUSD",
+        "symbol": "GUSD",
+        "url": "https://coinmarketcap.com/currencies/gusd/",
+        "message": "GUSD has been moving steadily over the last day. It continues to attract attention from market participants."
+    },
+    {
+        "name": "Circle tokenized stock (xStock)",
+        "symbol": "CRCLX",
+        "url": "https://coinmarketcap.com/currencies/circle-tokenized-stock-xstock/",
+        "message": "CRCLX has been moving steadily over the last day. It continues to attract attention from market participants."
+    },
+    {
+        "name": "Robinhood tokenized stock (xStock)",
+        "symbol": "HOODX",
+        "url": "https://coinmarketcap.com/currencies/robinhood-tokenized-stock-xstock/",
+        "message": "HOODX has been moving steadily over the last day. It continues to attract attention from market participants."
+    },
+    {
+        "name": "Apple tokenized stock (xStock)",
+        "symbol": "AAPLX",
+        "url": "https://coinmarketcap.com/currencies/apple-tokenized-stock-xstock/",
+        "message": "AAPLX has been moving steadily over the last day. It continues to attract attention from market participants."
+    },
+    {
+        "name": "EUR CoinVertible",
+        "symbol": "EURCV",
+        "url": "https://coinmarketcap.com/currencies/eur-coinvertible/",
+        "message": "EURCV has been moving steadily over the last day. It continues to attract attention from market participants."
+    },
+    {
+        "name": "Backpack",
+        "symbol": "BP",
+        "url": "https://coinmarketcap.com/currencies/backpack-exchange/",
+        "message": "BP has been moving steadily over the last day. It continues to attract attention from market participants."
+    },
+    {
+        "name": "Alphabet tokenized stock (xStock)",
+        "symbol": "GOOGLX",
+        "url": "https://coinmarketcap.com/currencies/alphabet-tokenized-stock-xstock/",
+        "message": "GOOGLX has been moving steadily over the last day. It continues to attract attention from market participants."
+    },
+    {
+        "name": "NVIDIA tokenized stock (xStock)",
+        "symbol": "NVDAX",
+        "url": "https://coinmarketcap.com/currencies/nvidia-tokenized-stock-xstock/",
+        "message": "NVDAX has been moving steadily over the last day. It continues to attract attention from market participants."
+    },
+    {
+        "name": "Ailey",
+        "symbol": "ALE",
+        "url": "https://coinmarketcap.com/currencies/project-ailey/",
+        "message": "ALE has been moving steadily over the last day. It continues to attract attention from market participants."
+    },
+    {
+        "name": "BNB Attestation Service",
+        "symbol": "BAS",
+        "url": "https://coinmarketcap.com/currencies/bnb-attestation-service/",
+        "message": "BAS has been showing strong momentum recently. Market activity remains elevated and traders appear highly engaged."
+    },
+    {
+        "name": "Shuffle",
+        "symbol": "SHFL",
+        "url": "https://coinmarketcap.com/currencies/shuffle/",
+        "message": "SHFL has experienced some recent pressure in the market. It will be interesting to see how activity develops from here."
+    },
+    {
+        "name": "TronBank",
+        "symbol": "TBK",
+        "url": "https://coinmarketcap.com/currencies/tronbank/",
+        "message": "TBK has experienced some recent pressure in the market. It will be interesting to see how activity develops from here."
+    },
+    {
+        "name": "Frax USD",
+        "symbol": "FRXUSD",
+        "url": "https://coinmarketcap.com/currencies/frax-usd/",
+        "message": "FRXUSD has been moving steadily over the last day. It continues to attract attention from market participants."
+    },
+    {
+        "name": "Undeads Games",
+        "symbol": "UDS",
+        "url": "https://coinmarketcap.com/currencies/undeads-games/",
+        "message": "UDS has experienced some recent pressure in the market. It will be interesting to see how activity develops from here."
+    },
+    {
+        "name": "Aster USDF",
+        "symbol": "USDF",
+        "url": "https://coinmarketcap.com/currencies/usdf/",
+        "message": "USDF has been moving steadily over the last day. It continues to attract attention from market participants."
+    },
+    {
+        "name": "Collector Crypt",
+        "symbol": "CARDS",
+        "url": "https://coinmarketcap.com/currencies/collector-crypt/",
+        "message": "CARDS has experienced some recent pressure in the market. It will be interesting to see how activity develops from here."
+    },
+    {
+        "name": "TAC Protocol",
+        "symbol": "TAC",
+        "url": "https://coinmarketcap.com/currencies/tac-protocol/",
+        "message": "TAC has been showing strong momentum recently. Market activity remains elevated and traders appear highly engaged."
+    },
+    {
+        "name": "Circle Internet Group Tokenized Stock (Ondo)",
+        "symbol": "CRCLon",
+        "url": "https://coinmarketcap.com/currencies/circle-internet-group-tokenized-stock-ondo/",
+        "message": "CRCLon has been moving steadily over the last day. It continues to attract attention from market participants."
+    },
+    {
+        "name": "Ribbita by Virtuals",
+        "symbol": "TIBBIR",
+        "url": "https://coinmarketcap.com/currencies/ribbita-by-virtuals/",
+        "message": "TIBBIR has been moving steadily over the last day. It continues to attract attention from market participants."
+    }
+]

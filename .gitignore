@@ -1,10 +1,9 @@
 venv/
 .env
 
-auth/state.json
-auth/session.json
+
 logs/
-output/
+
 
 screenshots/
 

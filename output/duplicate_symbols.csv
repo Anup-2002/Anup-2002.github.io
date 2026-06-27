@@ -1,0 +1,3 @@
+name,symbol,price,change_1h,change_24h,change_7d,market_cap,volume_24h,cmc_rank,slug,url
+GUSD,GUSD,0.998087,0.03650497,0.00950364,0.06410504,149154133.57833332,303416.43857803,233,gusd,https://coinmarketcap.com/currencies/gusd/
+Gemini Dollar,GUSD,0.999012,0.00188415,-0.01115194,-0.057183,39264451.26277916,944367.85387381,479,gemini-dollar,https://coinmarketcap.com/currencies/gemini-dollar/
