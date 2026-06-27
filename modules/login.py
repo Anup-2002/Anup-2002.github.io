@@ -1,9 +1,9 @@
-from playwright.sync_api import sync_playwright
+from playwright.sync_api import async_playwright
 
 
-def check_login():
+async def check_login():
 
-    with sync_playwright() as p:
+    async with async_playwright() as p:
 
         browser = p.chromium.launch(
             headless=False

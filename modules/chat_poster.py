@@ -386,13 +386,13 @@ async def verify_session(session):
 # Restart Browser
 # ==========================================================
 
-def restart_browser(session):
+async def restart_browser(session):
 
     print("\nRestarting browser...\n")
 
-    close_browser_session(session)
+    await close_browser_session(session)
 
-    time.sleep(
+    await asyncio.sleep(
 
         random.randint(
 
@@ -402,7 +402,7 @@ def restart_browser(session):
 
     )
 
-    session = create_browser_session(
+    session =await create_browser_session(
 
         headless=False
 
@@ -876,7 +876,7 @@ def should_restart_browser(
 # Batch Posting
 # ==========================================================
 
-def post_all_messages():
+async def post_all_messages():
 
     messages = load_json(
 
@@ -928,7 +928,7 @@ def post_all_messages():
 
     failed_posts = 0
 
-    session = create_browser_session(
+    session = await create_browser_session(
 
         headless=False
 
@@ -936,7 +936,7 @@ def post_all_messages():
 
     try:
 
-        if not verify_session(session):
+        if not await verify_session(session):
 
             raise Exception(
 
@@ -1084,7 +1084,7 @@ def post_all_messages():
 
     finally:
 
-        close_browser_session(
+        await close_browser_session(
 
             session
 
