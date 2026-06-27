@@ -1,8 +1,6 @@
 from playwright.sync_api import async_playwright
 
 
-from playwright.sync_api import sync_playwright
-
 
 def check_login():
 
@@ -12,13 +10,14 @@ def check_login():
             headless=True,
             args=[
                 "--no-sandbox",
-                "--disable-setuid-sandbox"
+                "--disable-setuid-sandbox",
+                
             ]
         )
 
         try:
 
-            context = browser.new_context()
+            context = .new_context()
 
             # only load state if file exists
             import os
