@@ -19,8 +19,9 @@ This project exposes a small **FastAPI** HTTP API to run the steps.
 **Goal:** automate posting short, human-like community comments for trending cryptocurrencies.
 
 **High-level pipeline**
+
 - scrape trending coins →
-- generate a short message (Gemini, with optional Groq fallback) →
+- generate a short message OPENAI_API_KEY, with fallback) →
 - post the comment to CoinMarketCap using your logged-in session.
 
 ---
@@ -42,7 +43,7 @@ graph TD
   H --> Y[Write outputs\noutput/last_trending.json\noutput/results.json]
 
   G -->|failure| H
-  F -->|Gemini fails| F2[Try Groq (if GROQ_API_KEY is set)]
+  F -->|OPENAI_API_KEY|
   F2 -->|still fails| F3[Use FALLBACK_MESSAGES]
 
 ```
@@ -73,7 +74,7 @@ graph TD
 - `modules/`
   - Core logic called by endpoints:
     - `fetch_trending.py` (Playwright scrape of CoinMarketCap trending page)
-    - `message_generator.py` (Gemini + Groq fallback)
+    - `message_generator.py` (OPENAI_API_KEY + fallback)
     - `chat_poster.py` (Playwright posting with selectors)
     - `login.py` (helper; session is mainly driven by `auth/state.json`)
 - `config/`
@@ -92,10 +93,7 @@ graph TD
 - Python 3.10+
 - Playwright + Chromium
 - LLM API access:
-  - `OPENAI_API_KEY` (IMP required for openai message generation include this in .env) 
-  - `GEMINI_API_KEY` (required for Gemini generation)
-  - `GROQ_API_KEY` (optional fallback)
-
+  - `OPENAI_API_KEY`
 ---
 
 ## Setup & Installation
@@ -133,8 +131,7 @@ python -m playwright install
 `modules/message_generator.py` loads:
 
 ```env
-GEMINI_API_KEY=your_gemini_api_key
-GROQ_API_KEY=your_groq_api_key   # optional
+OPENAI_API_KEY=""
 ```
 
 > `config/settings.py` may read additional env vars, but message generation in this repo primarily uses Gemini + optional Groq.
@@ -144,6 +141,7 @@ GROQ_API_KEY=your_groq_api_key   # optional
 ## Login / Session setup (`auth/state.json`)
 
 The bot uses Playwright `storage_state="auth/state.json"` for:
+
 - posting comments (`modules/chat_poster.py`)
 - scraping (context creation in `modules/fetch_trending.py`)
 - login validity check (`GET /check-login`)
@@ -177,6 +175,7 @@ Server base URL:
 ### 1) Check login session
 
 **Endpoint**
+
 - `GET /check-login`
 
 **Response example**
@@ -193,6 +192,7 @@ Server base URL:
 ### 2) Fetch trending coins
 
 **Endpoint**
+
 - `GET /fetch-trending`
 
 **Response example**
@@ -227,6 +227,7 @@ Server base URL:
 ### 3) Generate a message for a coin
 
 **Endpoint**
+
 - `POST /generate-message`
 
 **Request body**
@@ -264,6 +265,7 @@ Server base URL:
 ### 4) Post a message
 
 **Endpoint**
+
 - `POST /post-chat`
 
 **Body (JSON)**
@@ -298,14 +300,17 @@ curl -X POST "http://127.0.0.1:8000/post-chat" \
 ### 5) Run the full flow (recommended)
 
 **Endpoint**
+
 - `POST /full-flow`
 
 Runs:
+
 - fetch trending coins
 - generate a message for each coin
 - post the message for each coin
 
 **Output files**
+
 - `output/last_trending.json` (the coins used in this run)
 - `output/results.json` (per-coin status)
 
@@ -334,6 +339,7 @@ Runs:
 ### Coin object (produced by `fetch_trending_coins`)
 
 Expected fields in each coin dictionary:
+
 - `name`, `symbol`, `price`
 - `change_1h`, `change_24h`
 - `market_cap`, `volume_24h`
@@ -345,9 +351,11 @@ Expected fields in each coin dictionary:
 ### Message generation
 
 `modules/message_generator.py` builds a prompt using:
+
 - coin name/symbol/price/24h change/market cap/volume
 
 Rules in the prompt:
+
 - 1–2 sentences
 - no emojis
 - no hashtags
@@ -357,6 +365,7 @@ Rules in the prompt:
 ### Posting selectors (CoinMarketCap UI)
 
 `modules/chat_poster.py` uses these selectors:
+
 - textbox: `[data-test="base-editor-editable"]`
 - sentiment buttons:
   - bullish: `[data-test="editor-bullish-button"]`
@@ -370,14 +379,16 @@ If CoinMarketCap changes their UI/DOM, update selectors in `modules/chat_poster.
 ## Troubleshooting
 
 ### Playwright errors
+
 - Install browsers: `python -m playwright install`
 - Confirm Chromium can launch on your system
 
 ### Session errors ("Log in" / session expired)
+
 - Regenerate `auth/state.json`
 - Re-check with `GET /check-login`
 
 ### LLM / API key errors
-- Ensure `.env` includes `GEMINI_API_KEY`
-- If Gemini fails, the module may fall back to `GROQ_API_KEY` (if provided)
 
+- Ensure `.env` includes `OPENAI_API_KEY`
+- Ensure `.env` includes `CMC_API_KEY`
