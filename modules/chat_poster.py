@@ -404,7 +404,7 @@ async def restart_browser(session):
 
     session =await create_browser_session(
 
-        headless=False
+        headless=True
 
     )
 
