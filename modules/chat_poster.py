@@ -4,13 +4,11 @@ import random
 import time
 from pathlib import Path
 
-from playwright.async_api import (
-    async_playwright,
+from playwright.sync_api import (
+    sync_playwright,
     TimeoutError as PlaywrightTimeoutError
 )
-# ==========================================================
-# Configuration
-# ==========================================================
+
 
 AUTH_STATE = "auth/state.json"
 
@@ -48,17 +46,9 @@ PAGE_LOAD_MAX = 2200
 POST_WAIT_MIN = 2000
 POST_WAIT_MAX = 3500
 
-# ==========================================================
-# Output Directory
-# ==========================================================
-
 Path("output").mkdir(
     exist_ok=True
 )
-
-# ==========================================================
-# Utility Functions
-# ==========================================================
 
 def load_json(path, default):
 
@@ -109,11 +99,6 @@ def save_json(path, data):
 
         )
 
-
-# ==========================================================
-# Progress
-# ==========================================================
-
 def load_post_progress():
 
     progress = load_json(
@@ -149,10 +134,6 @@ def save_post_progress(index):
     )
 
 
-# ==========================================================
-# Delay Helpers
-# ==========================================================
-
 def random_pause():
 
     time.sleep(
@@ -179,9 +160,9 @@ def random_typing_delay():
     )
 
 
-async def random_page_wait(page):
+def random_page_wait(page):
 
-    await page.wait_for_timeout(
+    page.wait_for_timeout(
 
         random.randint(
 
@@ -194,9 +175,9 @@ async def random_page_wait(page):
     )
 
 
-async def random_post_wait(page):
+def random_post_wait(page):
 
-    await page.wait_for_timeout(
+    page.wait_for_timeout(
 
         random.randint(
 
@@ -207,18 +188,12 @@ async def random_post_wait(page):
         )
 
     )
-# ==========================================================
-# Browser Session Management
-# ==========================================================
 
-import asyncio
+def create_browser_session(headless=False):
 
+    p = sync_playwright().start()
 
-async def create_browser_session(headless=True):
-
-    p = await async_playwright().start()
-
-    browser = await p.chromium.launch(
+    browser = p.chromium.launch(
 
         headless=headless,
 
@@ -227,15 +202,14 @@ async def create_browser_session(headless=True):
             "--disable-blink-features=AutomationControlled",
 
             "--disable-dev-shm-usage",
-            "--no-sandbox",
-            "--disable-setuid-sandbox"
-            
+
+            "--no-sandbox"
 
         ]
 
     )
 
-    context = await browser.new_context(
+    context = browser.new_context(
 
         storage_state=AUTH_STATE,
 
@@ -249,7 +223,7 @@ async def create_browser_session(headless=True):
 
     )
 
-    page = await context.new_page()
+    page = context.new_page()
 
     page.set_default_timeout(40000)
 
@@ -268,11 +242,11 @@ async def create_browser_session(headless=True):
     }
 
 
-async def close_browser_session(session):
+def close_browser_session(session):
 
     try:
 
-        await session["page"].close()
+        session["page"].close()
 
     except Exception:
 
@@ -280,7 +254,7 @@ async def close_browser_session(session):
 
     try:
 
-        await session["context"].close()
+        session["context"].close()
 
     except Exception:
 
@@ -288,7 +262,7 @@ async def close_browser_session(session):
 
     try:
 
-        await session["browser"].close()
+        session["browser"].close()
 
     except Exception:
 
@@ -296,20 +270,20 @@ async def close_browser_session(session):
 
     try:
 
-        await session["playwright"].stop()
+        session["playwright"].stop()
 
     except Exception:
 
         pass
 
 
-async def verify_session(session):
+def verify_session(session):
 
     page = session["page"]
 
     try:
 
-        await page.goto(
+        page.goto(
 
             "https://coinmarketcap.com/currencies/bitcoin/",
 
@@ -317,7 +291,7 @@ async def verify_session(session):
 
         )
 
-        await random_page_wait(page)
+        random_page_wait(page)
 
         if "login" in page.url.lower():
             print("Redirected to login page.")
@@ -328,7 +302,7 @@ async def verify_session(session):
         )
 
         try:
-            await textbox.wait_for(
+            textbox.wait_for(
                 state="visible",
                 timeout=15000
             )
@@ -341,7 +315,7 @@ async def verify_session(session):
         )
 
         try:
-            await post_button.wait_for(
+            post_button.wait_for(
                 state="visible",
                 timeout=10000
             )
@@ -382,18 +356,13 @@ async def verify_session(session):
 
         return False
 
-
-# ==========================================================
-# Restart Browser
-# ==========================================================
-
-async def restart_browser(session):
+def restart_browser(session):
 
     print("\nRestarting browser...\n")
 
-    await close_browser_session(session)
+    close_browser_session(session)
 
-    await asyncio.sleep(
+    time.sleep(
 
         random.randint(
 
@@ -403,9 +372,9 @@ async def restart_browser(session):
 
     )
 
-    session =await create_browser_session(
+    session = create_browser_session(
 
-        headless=True
+        headless=False
 
     )
 
@@ -418,9 +387,6 @@ async def restart_browser(session):
         )
 
     return session
-# ==========================================================
-# Post Chat (Optimized)
-# ==========================================================
 
 def post_chat_with_session(
 
@@ -437,11 +403,6 @@ def post_chat_with_session(
     page = session["page"]
 
     try:
-
-        # --------------------------------------------------
-        # Open Coin Page
-        # --------------------------------------------------
-
         page.goto(
 
             coin_url,
@@ -463,10 +424,6 @@ def post_chat_with_session(
                 "message": "Redirected to login."
 
             }
-
-        # --------------------------------------------------
-        # Captcha Detection
-        # --------------------------------------------------
 
         page_text = page.locator("body").inner_text().lower()
 
@@ -493,11 +450,6 @@ def post_chat_with_session(
                     "message": "Captcha detected"
 
                 }
-
-        # --------------------------------------------------
-        # Editor
-        # --------------------------------------------------
-
         textbox = page.locator(
             '[data-test="base-editor-editable"]'
         )
@@ -548,11 +500,6 @@ def post_chat_with_session(
             400
 
         )
-
-        # --------------------------------------------------
-        # Sentiment
-        # --------------------------------------------------
-
         if sentiment.lower() == "bullish":
 
             sentiment_button = page.locator(
@@ -579,9 +526,6 @@ def post_chat_with_session(
 
         )
 
-        # --------------------------------------------------
-        # Post Button
-        # --------------------------------------------------
 
         post_button = page.locator(
             '[data-test="editor-post-button"]'
@@ -620,9 +564,6 @@ def post_chat_with_session(
 
             }
 
-        # --------------------------------------------------
-        # Submit
-        # --------------------------------------------------
         page.mouse.move(
             random.randint(300,900),
             random.randint(200,600)
@@ -693,9 +634,6 @@ def post_chat_with_session(
             "message": str(e)
 
         }
-# ==========================================================
-# Retry Wrapper
-# ==========================================================
 
 def post_with_retry(
 
@@ -739,17 +677,9 @@ def post_with_retry(
 
         )
 
-        # --------------------------------------
-        # Success
-        # --------------------------------------
-
         if status == "success":
 
             return result
-
-        # --------------------------------------
-        # Login Expired
-        # --------------------------------------
 
         if status == "expired":
 
@@ -761,10 +691,6 @@ def post_with_retry(
 
             return result
 
-        # --------------------------------------
-        # Captcha
-        # --------------------------------------
-
         if status == "captcha":
 
             print(
@@ -774,10 +700,6 @@ def post_with_retry(
             )
 
             return result
-
-        # --------------------------------------
-        # Retry
-        # --------------------------------------
 
         if status == "retry":
 
@@ -805,10 +727,6 @@ def post_with_retry(
 
             continue
 
-        # --------------------------------------
-        # Other Error
-        # --------------------------------------
-
         print(
 
             f"Retry {attempt}/{MAX_RETRIES} ->",
@@ -831,10 +749,6 @@ def post_with_retry(
 
         )
 
-    # ------------------------------------------
-    # Failed after retries
-    # ------------------------------------------
-
     return {
 
         "status": "failed",
@@ -853,11 +767,6 @@ def post_with_retry(
 
     }
 
-
-# ==========================================================
-# Restart Decision
-# ==========================================================
-
 def should_restart_browser(
 
     successful_posts
@@ -873,11 +782,7 @@ def should_restart_browser(
         RESTART_BROWSER_AFTER
 
     )
-    # ==========================================================
-# Batch Posting
-# ==========================================================
-
-async def post_all_messages():
+def post_all_messages():
 
     messages = load_json(
 
@@ -929,7 +834,7 @@ async def post_all_messages():
 
     failed_posts = 0
 
-    session = await create_browser_session(
+    session = create_browser_session(
 
         headless=False
 
@@ -937,7 +842,7 @@ async def post_all_messages():
 
     try:
 
-        if not await verify_session(session):
+        if not verify_session(session):
 
             raise Exception(
 
@@ -1010,11 +915,6 @@ async def post_all_messages():
                 results
 
             )
-
-            # -----------------------------------
-            # Success
-            # -----------------------------------
-
             if result["status"] == "success":
 
                 successful_posts += 1
@@ -1038,11 +938,6 @@ async def post_all_messages():
                 random_pause()
 
                 continue
-
-            # -----------------------------------
-            # Captcha
-            # -----------------------------------
-
             if result["status"] == "captcha":
 
                 print(
@@ -1053,9 +948,6 @@ async def post_all_messages():
 
                 continue
 
-            # -----------------------------------
-            # Session Expired
-            # -----------------------------------
 
             if result["status"] == "expired":
 
@@ -1067,9 +959,7 @@ async def post_all_messages():
 
                 break
 
-            # -----------------------------------
-            # Failed
-            # -----------------------------------
+
 
             failed_posts += 1
 
@@ -1085,7 +975,7 @@ async def post_all_messages():
 
     finally:
 
-        await close_browser_session(
+        close_browser_session(
 
             session
 
@@ -1140,9 +1030,7 @@ async def post_all_messages():
         "remaining": remaining
 
     }
-# ==========================================================
-# Main
-# ==========================================================
+
 
 if __name__ == "__main__":
 
