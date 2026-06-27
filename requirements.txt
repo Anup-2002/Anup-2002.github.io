@@ -1,3 +1,4 @@
+playwright
 fastapi
 uvicorn
 playwright
@@ -10,10 +11,7 @@ pydantic
 aiosqlite
 google-genai
 loguru
-playwright-stealth
-# adding the following dependencies for the new features
 sqlalchemy  
 fastapi
 uvicorn
 gunicorn
-playwright
