@@ -227,8 +227,9 @@ async def create_browser_session(headless=True):
             "--disable-blink-features=AutomationControlled",
 
             "--disable-dev-shm-usage",
-
-            "--no-sandbox"
+            "--no-sandbox",
+            "--disable-setuid-sandbox"
+            
 
         ]
 
